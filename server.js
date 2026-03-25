@@ -22,14 +22,31 @@ const server = http.createServer( (req, res)=>{
             });
     }
 
-    else{
-        fs.readFile(path.join(__dirname, '404.html'),
-            (err,content)=>{
-                if(err) throw err;
-                res.writeHead(404, {'Content-Type': 'text/html'})
-                res.end(content);
-            });
+    else if (req.url.endsWith('.png')) {
+    fs.readFile(path.join(__dirname, req.url.substring(1)), (err, content) => {
+        if (err) {
+            res.writeHead(404, { 'Content-Type': 'text/plain' });
+            res.end('Image Not Found');
+            return;
+        }
+
+        res.writeHead(200, { 'Content-Type': 'image/png' });
+        res.end(content);
+    });
     }
+    
+    else if (req.url.endsWith('.jpg') || req.url.endsWith('.jpeg')) {
+        fs.readFile(path.join(__dirname, req.url.substring(1)), (err, content) => {
+            if (err) {
+                res.writeHead(404, { 'Content-Type': 'text/plain' });
+                res.end('Image Not Found');
+                return;
+            }
+    
+            res.writeHead(200, { 'Content-Type': 'image/jpeg' });
+            res.end(content);
+        });
+}
    
 
     console.log(req.url);
