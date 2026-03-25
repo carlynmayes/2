@@ -1,0 +1,307 @@
+:root{
+    --main-padding: 5px;
+    --main-radius: 5px;
+    --cream: #f0ead2;
+    --tan: #dde5b6;
+    --olive: #adc178;
+    --brown: #a98467;
+    --darkbrown: #6c584c;
+    --smallfont: 'Assistant', sans-serif;
+    --bigfont: 'Gravitas One', serif;
+}
+body{
+    background-color: var(--cream);
+}
+
+h1{
+    font-family: var(--bigfont);
+    font-size:40pt
+}
+h2{
+    font-family: var(--bigfont);
+    font-weight: 700;
+}
+h3{
+    font-family: var(--bigfont);
+    font-weight: 400;
+}
+h4{
+    font-family: var(--smallfont);
+    font-weight: 500;
+}
+
+#container1{
+    display: grid;
+    height: 100vh;
+    gap: 0.5rem;
+    grid-template-columns:.4fr .6fr;
+    grid-template-rows:.1fr .9fr ;
+    grid-template-areas: 
+    "nav nav"
+    "home home"
+    ;
+}
+
+.logo{
+    height: 80px;
+    border-radius: 50%;
+}
+
+#container2{
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--cream);
+    border-radius: var(--main-radius);
+    padding: var(--main-padding);
+}
+
+.featimg{
+    width: 100%;
+    height: 250px;
+    border-radius: 20px;
+    object-fit: cover;
+}
+
+#container3{
+    display: grid;
+    height: auto;
+    gap: 0.5rem;
+    grid-template-columns:1fr 1fr 1fr 1fr ;
+    grid-template-rows:1fr ;
+    grid-template-areas: 
+    "info info info info"
+    ;
+}
+#container4{
+    display: grid;
+    height: auto;
+    gap: 0.5rem;
+    grid-template-columns:1fr 1fr 1fr 1fr 1fr 1fr ;
+    grid-template-rows:1fr ;
+    grid-template-areas: 
+    "gallery gallery gallery gallery gallery gallery"
+    ;
+}
+#container5{
+    display: grid;
+    height: 100vh;
+    gap: 0.5rem;
+    grid-template-columns:1fr 1fr 1fr ;
+    grid-template-rows:1fr 1fr;
+    grid-template-areas: 
+    "pricing pricing pricing"
+    "testimonials testimonials testimonials"
+    ;
+}
+#container6{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20vh;
+}
+
+nav{
+    grid-area: nav;
+    background-color: var(--olive);
+    border-radius: var(--main-radius);
+    padding: var(--main-padding);
+    display: flex;
+    justify-content:space-evenly;
+    align-items: center;
+    
+}
+
+#home{
+    grid-area: home;
+    background-color: var(--tan);
+    border-radius: var(--main-radius);
+    padding: var(--main-padding);
+    display: grid;
+    grid-template-columns: .4fr .6fr;
+    align-items: center;
+}
+.pots{
+    width: 100%;
+    height: 500px;
+    border-radius: 10px;
+}
+.homewords{
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+}
+
+#features{
+    display: flex;
+    justify-content: space-between;
+    gap: 3rem;
+}
+.feat{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+#info{
+    grid-area: info;
+    background-color: var(--brown);
+    border-radius: var(--main-radius);
+    padding: var(--main-padding);
+    text-align: center;
+}
+#hiw{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 2rem;
+}
+.box{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+}
+.himg{
+    width: 100px;
+    border-radius: 50px;
+    object-fit: cover;
+    margin-bottom: 0.5rem;
+}
+
+#gallery{
+    grid-area: gallery;
+    background-color: var(--olive);
+    border-radius: var(--main-radius);
+    padding: var(--main-padding);
+    text-align: center;
+}
+
+#gallimg{
+    display: flex;
+    justify-content: space-between;
+}
+
+#gallimg img{
+    height: 250px;
+    width: auto;
+    border-radius: 20px;
+    object-fit: cover;
+}
+
+#pricing{
+    grid-area: pricing;
+    background-color: var(--darkbrown);
+    border-radius: var(--main-radius);
+    padding: var(--main-padding);
+}
+.membership{
+    background-color: var(--cream);
+    border-radius: 10px;
+    text-align: center;
+}
+
+#testimonials{
+    grid-area: testimonials;
+    background-color: var(--tan);
+    border-radius: var(--main-radius);
+    padding: var(--main-padding);
+    text-align: center;
+}
+#testers{
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+}
+.test{
+    display: flex;
+    flex-direction: column;
+    background-color: var(--cream);
+    border-radius: 30px;
+}
+
+#signup{
+    background-color: var(--cream);
+    border-radius: var(--main-radius);
+    padding: var(--main-padding);
+    text-align: center;
+}
+.form{
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+footer{
+    grid-area: footer;
+    background-color: var(--olive);
+    border-radius: var(--main-radius);
+    padding: var(--main-padding);
+}
+
+#membershipsContainer{
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+
+
+
+@media only screen and (max-width:700px){
+    #container1,#container3,#container4,#container5,#container6{
+        height: auto;
+    }
+
+    #home{
+        grid-template-columns: 1fr;
+        text-align: center;
+        gap: 1.5rem;
+    }
+
+    .homewords{
+        align-items: center;
+    }
+
+    .pots{
+        height: auto;
+        max-width: 100%;
+    }
+
+    #features{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #hiw{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .box{
+        max-width: 300px;
+    }
+
+    #gallimg{
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 1rem;
+    }
+
+    #gallimg img{
+        height: 150px;
+    }
+
+    #testcards{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .signup-form{
+        flex-direction: column;
+    }
+
+}

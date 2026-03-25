@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <link href="https://fonts.googleapis.com/css2?family=Gravitas+One&family=Assistant:wght@200;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="bigcontainer">
+    <div id="container1">
+        <nav>
+            <img src="pot_only_logo.png" class="logo" alt="logo">
+            <h2>Glaze Book</h2>
+            <h3>Features</h3>
+            <h3>How it Works</h3>
+            <h3>For Potters</h3>
+            <h3>Pricing</h3>
+            <button>Get Started</button>
+        </nav>
+        <div id="home">
+            <div class="homewords">
+                <h1>Your ceramics process, documented.</h1>
+                <h4>GlazeBook helps potters track kiln firings, glaze recipes, and results—so every piece teaches you something new.</h4>
+            </div>
+            <img src="pots_in_line.jpg" class="pots" alt="pots">
+        </div>
+    </div>
+    <div id="container2">
+        <h1>Our Features</h1>
+        <div id="features">
+            <div class="feat" id="feat1">
+                <img src="wheel.jpg" class="featimg" alt="wheel">
+                <h2>Kiln Firing Logs</h2>
+                <h4>Record cone, schedule, kiln type, and outcome for every firing.</h4>
+            </div>
+            <div class="feat" id="feat2">
+                <img src="aerial_view.jpg" class="featimg" alt="top view">
+                <h2>Glaze Recipe Library</h2>
+                <h4>Store ingredients, percentages, and firing range for all your glazes.</h4>
+            </div>
+            <div class="feat" id="feat3">
+                <img src="clay_bags.jpg" class="featimg" alt="bags">
+                <h2>Clay Body Tracking</h2>
+                <h4>Track clay types, shrinkage, and which glazes they work with.</h4>
+            </div>
+        </div>
+    </div>
+    <div id="container3">
+        <div id="info">
+            <h1>How it Works</h1>
+            <div id="hiw">
+                <div class="box">
+                <img src="wheel.jpg" class="himg" alt="wheel">
+                <h2>Log your glaze.</h2>
+                <h4>Enter recipe details and firing range.</h4>
+            </div>
+            <div class="box">
+                <img src="wheel.jpg" class="himg" alt="wheel">
+                <h2>Record your firing.</h2>
+                <h4>Capture cone, schedule, and kiln notes.</h4>
+            </div>
+            <div class="box">
+                <img src="wheel.jpg" class="himg" alt="wheel">
+                <h2>Upload your results.</h2>
+                <h4>Add photos and rate how it turned out.</h4>
+            </div>
+            <div class="box">
+                <img src="wheel.jpg" class="himg" alt="wheel">
+                <h2>Refine and repeat.</h2>
+                <h4>Search previous results and plan your next test.</h4>
+            </div>
+            </div>
+        </div>
+    </div>
+    <div id="container4">
+        <div id="gallery">
+            <h1>See your ceramic history</h1>
+            <h4>Dashboard view of recent firings, glazes, and upcoming kiln schedules.</h4>
+            <div id="gallimg">
+                <img src="aerial_view.jpg" alt="aerial">
+                <img src="clay_bags.jpg" alt="clay">
+                <img src="logo.png" alt="logo">
+                <img src="pots_in_line.jpg" alt="pots">
+                <img src="studio_throwing.jpg" alt="studio">
+                <img src="wheel.jpg" alt="wheel">
+            </div>
+        </div>
+    </div>
+    <div id="container5">
+        <div id="pricing">
+            <h1>Price Plans</h1>
+            <div id="membershipsContainer"></div>
+        </div>
+        <div id="testimonials">
+            <h1>Testimonials</h1>
+            <h4>What potters are saying about GlazeBook</h4>
+            <div id="testers">
+                <div class="test">
+                    stars
+                    <h4>
+                    “I used to rely on scattered notebooks and photos on my phone. GlazeBook keeps everything in one place and actually helps me repeat results I love.” 
+                    </h4>
+                    <h4>-Jennifer J.
+                        Ceramic Artist
+                    </h4>
+                </div>
+                <div class="test">
+                    stars
+                    <h4>
+                        “As a student, being able to track firings and glaze tests has made critiques so much easier. I can finally explain why something worked.”
+                    </h4>
+                    <h4>-Christian T.
+                        Ceramics Student
+                    </h4>
+                </div>
+                <div class="test">
+                    stars
+                    <h4>
+                        “We share kilns in our community studio, and GlazeBook has completely improved communication. Everyone knows what was fired, when, and how it turned out.”
+                    </h4>
+                    <h4>
+                        -Connie L.
+                        Studio Manager
+                    </h4>
+                </div>  
+            </div>  
+        </div>
+    </div>
+    <div id="container6">
+        <div id="signup">
+            <h1>Step into the world of creativity</h1>
+            <div class="form">
+                <input type="email" placeholder="you@example.com">
+                <button>Get Started</button>
+            </div>
+
+        </div>
+    </div>
+    <footer>
+        <h2>Follow Us</h2>
+    </footer>
+    </div>
+
+
+
+    <style>
+    :root{
+        --main-padding: 5px;
+        --main-radius: 5px;
+        --cream: #f0ead2;
+        --tan: #dde5b6;
+        --olive: #adc178;
+        --brown: #a98467;
+        --darkbrown: #6c584c;
+        --smallfont: 'Assistant', sans-serif;
+        --bigfont: 'Gravitas One', serif;
+    }
+    body{
+        background-color: var(--cream);
+    }
+
+    h1{
+        font-family: var(--bigfont);
+        font-size:40pt
+    }
+    h2{
+        font-family: var(--bigfont);
+        font-weight: 700;
+    }
+    h3{
+        font-family: var(--bigfont);
+        font-weight: 400;
+    }
+    h4{
+        font-family: var(--smallfont);
+        font-weight: 500;
+    }
+
+    #container1{
+        display: grid;
+        height: 100vh;
+        gap: 0.5rem;
+        grid-template-columns:.4fr .6fr;
+        grid-template-rows:.1fr .9fr ;
+        grid-template-areas: 
+        "nav nav"
+        "home home"
+        ;
+    }
+
+    .logo{
+        height: 80px;
+        border-radius: 50%;
+    }
+
+    #container2{
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: var(--cream);
+        border-radius: var(--main-radius);
+        padding: var(--main-padding);
+    }
+
+    .featimg{
+        width: 100%;
+        height: 250px;
+        border-radius: 20px;
+        object-fit: cover;
+    }
+
+    #container3{
+        display: grid;
+        height: auto;
+        gap: 0.5rem;
+        grid-template-columns:1fr 1fr 1fr 1fr ;
+        grid-template-rows:1fr ;
+        grid-template-areas: 
+        "info info info info"
+        ;
+    }
+    #container4{
+        display: grid;
+        height: auto;
+        gap: 0.5rem;
+        grid-template-columns:1fr 1fr 1fr 1fr 1fr 1fr ;
+        grid-template-rows:1fr ;
+        grid-template-areas: 
+        "gallery gallery gallery gallery gallery gallery"
+        ;
+    }
+    #container5{
+        display: grid;
+        height: 100vh;
+        gap: 0.5rem;
+        grid-template-columns:1fr 1fr 1fr ;
+        grid-template-rows:1fr 1fr;
+        grid-template-areas: 
+        "pricing pricing pricing"
+        "testimonials testimonials testimonials"
+        ;
+    }
+    #container6{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 20vh;
+    }
+
+    nav{
+        grid-area: nav;
+        background-color: var(--olive);
+        border-radius: var(--main-radius);
+        padding: var(--main-padding);
+        display: flex;
+        justify-content:space-evenly;
+        align-items: center;
+        
+    }
+
+    #home{
+        grid-area: home;
+        background-color: var(--tan);
+        border-radius: var(--main-radius);
+        padding: var(--main-padding);
+        display: grid;
+        grid-template-columns: .4fr .6fr;
+        align-items: center;
+    }
+    .pots{
+        width: 100%;
+        height: 500px;
+        border-radius: 10px;
+    }
+    .homewords{
+        display: flex;
+        flex-direction: column;
+        align-items: left;
+    }
+
+    #features{
+        display: flex;
+        justify-content: space-between;
+        gap: 3rem;
+    }
+    .feat{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    #info{
+        grid-area: info;
+        background-color: var(--brown);
+        border-radius: var(--main-radius);
+        padding: var(--main-padding);
+        text-align: center;
+    }
+    #hiw{
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        gap: 2rem;
+    }
+    .box{
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 0.5rem;
+    }
+    .himg{
+        width: 100px;
+        border-radius: 50px;
+        object-fit: cover;
+        margin-bottom: 0.5rem;
+    }
+
+    #gallery{
+        grid-area: gallery;
+        background-color: var(--olive);
+        border-radius: var(--main-radius);
+        padding: var(--main-padding);
+        text-align: center;
+    }
+
+    #gallimg{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    #gallimg img{
+        height: 250px;
+        width: auto;
+        border-radius: 20px;
+        object-fit: cover;
+    }
+
+    #pricing{
+        grid-area: pricing;
+        background-color: var(--darkbrown);
+        border-radius: var(--main-radius);
+        padding: var(--main-padding);
+    }
+    .membership{
+        background-color: var(--cream);
+        border-radius: 10px;
+        text-align: center;
+    }
+
+    #testimonials{
+        grid-area: testimonials;
+        background-color: var(--tan);
+        border-radius: var(--main-radius);
+        padding: var(--main-padding);
+        text-align: center;
+    }
+    #testers{
+        display: flex;
+        justify-content: space-between;
+        gap: 2rem;
+    }
+    .test{
+        display: flex;
+        flex-direction: column;
+        background-color: var(--cream);
+        border-radius: 30px;
+    }
+
+    #signup{
+        background-color: var(--cream);
+        border-radius: var(--main-radius);
+        padding: var(--main-padding);
+        text-align: center;
+    }
+    .form{
+        display: flex;
+        justify-content: center;
+        gap: 1rem;
+    }
+
+    footer{
+        grid-area: footer;
+        background-color: var(--olive);
+        border-radius: var(--main-radius);
+        padding: var(--main-padding);
+    }
+
+    #membershipsContainer{
+        display: flex;
+        justify-content: space-between;
+        gap: 2rem;
+    }
+
+
+
+
+    @media only screen and (max-width:700px){
+        #container1,#container3,#container4,#container5,#container6{
+            height: auto;
+        }
+
+        #home{
+            grid-template-columns: 1fr;
+            text-align: center;
+            gap: 1.5rem;
+        }
+
+        .homewords{
+            align-items: center;
+        }
+
+        .pots{
+            height: auto;
+            max-width: 100%;
+        }
+
+        #features{
+            flex-direction: column;
+            align-items: center;
+        }
+
+        #hiw{
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .box{
+            max-width: 300px;
+        }
+
+        #gallimg{
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 1rem;
+        }
+
+        #gallimg img{
+            height: 150px;
+        }
+
+        #testcards{
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .signup-form{
+            flex-direction: column;
+        }
+
+    }
+    </style>
+
+    
+</body>
+</html>

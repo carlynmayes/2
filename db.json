@@ -1,0 +1,72 @@
+{
+    "memberships": [
+       {
+        "id": 1,
+        "name": "Free",
+        "price": 0,
+        "recurring": 365,
+        "discount": null,
+        "active": true
+    },
+        {
+        "id": 2,
+        "name": "Pro Trial",
+        "price": 0,
+        "recurring": null,
+        "discount": 100,
+        "active": true
+    },
+        {
+        "id": 3,
+        "name": "Pro Monthly",
+        "price": 6,
+        "recurring": 30,
+        "discount": 0,
+        "active": true
+
+    },
+        {
+        "id": 4,
+        "name": "Pro Yearly",
+        "price": 60,
+        "recurring": 365,
+        "discount": 17, 
+        "active": true
+    },
+        {
+        "id": 5,
+        "name": "Studio Monthly",
+        "price": 15,
+        "recurring": 30,
+        "discount": null,
+        "active": true
+    },
+    {
+        "id": 6,
+        "name": "Studio Yearly",
+        "price": 150,
+        "recurring": 365,
+        "discount": 17,
+        "active": true
+    },
+    {
+        "id": 7,
+        "name": "Student Monthly",
+        "price": 5,
+        "recurring": 30,
+        "discount": null,
+        "active":false
+    },
+    {
+        "id": 8,
+        "name": "Student Yearly",
+        "price": 150,
+        "recurring": 365,
+        "discount": 17,
+        "active":false
+    }
+
+    ]
+
+
+}
