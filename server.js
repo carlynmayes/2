@@ -5,7 +5,7 @@ const path = require('path');
 const server = http.createServer( (req, res)=>{
     
     if(req.url === '/'){
-        fs.readFile(path.join(__dirname, 'public','index.html'),
+        fs.readFile(path.join(__dirname,'index.html'),
             (err,content)=>{
                 if(err) throw err;
                 res.writeHead(200, {'Content-Type': 'text/html'})
@@ -14,7 +14,7 @@ const server = http.createServer( (req, res)=>{
     }
 
     else if(req.url ==='/api'){
-        fs.readFile(path.join(__dirname, 'public','db.json'),
+        fs.readFile(path.join(__dirname, 'db.json'),
             (err,content)=>{
                 if(err) throw err;
                 res.writeHead(200, {'Content-Type': 'application/json'})
@@ -23,7 +23,7 @@ const server = http.createServer( (req, res)=>{
     }
 
     else{
-        fs.readFile(path.join(__dirname, 'public','404.html'),
+        fs.readFile(path.join(__dirname, '404.html'),
             (err,content)=>{
                 if(err) throw err;
                 res.writeHead(404, {'Content-Type': 'text/html'})
