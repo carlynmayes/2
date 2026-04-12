@@ -2,7 +2,7 @@
   "name": "a2",
   "version": "1.0.0",
   "description": "Node HTTP server assignment",
-  "main": "server.js",
+  "main": "index.js",
   "scripts": {
     "start": "node index.js"
   }
