@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Dashboard - GlazeBook Memberships</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Gravitas+One&family=Assistant:wght@200;400;700&display=swap" rel="stylesheet">
+
+  
+</head>
+
+<body>
+
+  <h1>GlazeBook Membership Dashboard</h1>
+  <button id="logoutBtn">Logout</button>
+
+  <hr>
+
+  <h2>Add a Membership</h2>
+  <form id="createMembershipForm">
+    <input type="number" id="membershipId" placeholder="Membership ID" required>
+    <input type="text" id="name" placeholder="Membership Name" required>
+    <input type="number" id="price" placeholder="Price" required>
+    <input type="number" id="recurring" placeholder="Recurring Days" required>
+    <input type="number" id="discount" placeholder="Discount" required>
+
+    <label>
+      Active:
+      <select id="active">
+        <option value="true">true</option>
+        <option value="false">false</option>
+      </select>
+    </label>
+
+    <button type="submit">Add Membership</button>
+  </form>
+  <p id="createMsg"></p>
+
+  <hr>
+
+  <h2>Update a Membership</h2>
+  <form id="updateMembershipForm">
+    <input type="text" id="updateMongoId" placeholder="MongoDB _id to update" required>
+    <input type="number" id="updateMembershipId" placeholder="New Membership ID" required>
+    <input type="text" id="updateName" placeholder="New Membership Name" required>
+    <input type="number" id="updatePrice" placeholder="New Price" required>
+    <input type="number" id="updateRecurring" placeholder="New Recurring Days" required>
+    <input type="number" id="updateDiscount" placeholder="New Discount" required>
+
+    <label>
+      Active:
+      <select id="updateActive">
+        <option value="true">true</option>
+        <option value="false">false</option>
+      </select>
+    </label>
+
+    <button type="submit">Update Membership</button>
+  </form>
+  <p id="updateMsg"></p>
+
+  <hr>
+
+  <h2>Delete a Membership</h2>
+  <form id="deleteMembershipForm">
+    <input type="text" id="deleteMongoId" placeholder="MongoDB _id to delete" required>
+    <button type="submit">Delete Membership</button>
+  </form>
+  <p id="deleteMsg"></p>
+
+  <hr>
+
+  <h2>All Memberships</h2>
+  <button id="displayAllBtn">Display All Memberships</button>
+  <div id="membershipsList"></div>
+
+  <script src="js/memberships.js"></script>
+  
+  <style>
+      :root {
+        --cream: #f0ead2;
+        --tan: #dde5b6;
+        --olive: #adc178;
+        --brown: #a98467;
+        --darkbrown: #6c584c;
+        --smallfont: 'Assistant', sans-serif;
+        --bigfont: 'Gravitas One', serif;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        background-color: var(--cream);
+        font-family: var(--smallfont);
+        color: var(--darkbrown);
+        padding: 2rem;
+      }
+
+      h1, h2, h3 {
+        font-family: var(--bigfont);
+        text-align: center;
+      }
+
+      button {
+        padding: 0.7rem 1rem;
+        border: none;
+        border-radius: 10px;
+        background-color: var(--olive);
+        color: var(--darkbrown);
+        font-family: var(--bigfont);
+        cursor: pointer;
+      }
+
+      button:hover {
+        background-color: var(--brown);
+        color: var(--cream);
+      }
+
+      #logoutBtn {
+        display: block;
+        margin: 0 auto 1rem auto;
+      }
+
+      form {
+        background-color: var(--tan);
+        padding: 1.5rem;
+        border-radius: 15px;
+        max-width: 500px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        gap: 0.8rem;
+      }
+
+      input, select {
+        padding: 0.7rem;
+        border-radius: 8px;
+        border: 2px solid var(--brown);
+        font-family: var(--smallfont);
+        background-color: var(--cream);
+        color: var(--darkbrown);
+      }
+
+      input:focus, select:focus {
+        outline: none;
+        border-color: var(--darkbrown);
+      }
+
+      hr {
+        margin: 2rem 0;
+        border: 1px solid var(--brown);
+      }
+
+      #membershipsList {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 1.5rem;
+        margin-top: 1rem;
+      }
+
+      .membership-card {
+        background-color: var(--tan);
+        border-radius: 20px;
+        padding: 1.3rem;
+        width: 300px;
+        box-shadow: 0 8px 18px rgba(108, 88, 76, 0.2);
+      }
+
+      .membership-card p {
+        margin: 0.35rem 0;
+      }
+
+      #createMsg, #updateMsg, #deleteMsg {
+        text-align: center;
+        font-weight: 700;
+      }
+
+      #displayAllBtn {
+        display: block;
+        margin: 1rem auto;
+      }
+
+      @media only screen and (max-width: 700px) {
+        body {
+          padding: 1rem;
+        }
+
+        .membership-card {
+          width: 100%;
+        }
+      }
+  </style>
+  
+</body>
+</html>
